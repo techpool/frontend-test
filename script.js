@@ -16,3 +16,10 @@ for (var i = 0; i < list.length; i++) {
 	var src = list[i].getAttribute('data-image');
 	list[i].style.backgroundImage="url('" + src + "')";
 }
+
+var list2 = document.getElementsByClassName('image');
+
+for (var i = 0; i < list2.length; i++) {
+	var src = list2[i].getAttribute('data-image');
+	list2[i].style.backgroundImage="url('" + src + "')";
+}

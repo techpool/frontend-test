@@ -1,0 +1,228 @@
+body{
+	margin: 0;
+	overflow-y: hidden;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.left-nav{
+	height: 100vh;
+	width: 25%;
+	background-color: white;
+	overflow-y: scroll;
+	float: left;
+	padding: 10px;
+}
+
+.left-nav .search-box {
+	width: 99%;
+	height: 40px;
+	border-radius: 15px;
+	background-color: #F2F2F2;
+	border: none;
+	color: black
+}
+
+.left-nav .search-box input{
+	width: 80%;
+	height: 30px;
+	margin-left: 12px;
+	margin-top: 2px;
+	background-color: inherit;
+	border: none;
+}
+
+.left-nav .search-box .search-logo{
+	height: 30px;
+	width: 30px;
+	margin-top: 4px;
+	margin-left: 4px;
+	position: absolute;
+	background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.left-nav .tabs{
+	width: 100%;
+}
+
+.left-nav .tabs ul{
+	list-style: none;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.left-nav .tabs ul li{
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+
+.left-nav::-webkit-scrollbar { 
+    display: none; 
+}
+
+.card{
+	z-index: 2;
+	min-height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+}
+
+.card:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 27%, rgba(2,2,2,0.88) 81%, rgba(3,3,3,0.88) 97%, rgba(8,8,8,0.88) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(27%, rgba(0,0,0,0.29)), color-stop(81%, rgba(2,2,2,0.88)), color-stop(97%, rgba(3,3,3,0.88)), color-stop(100%, rgba(8,8,8,0.88)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 27%, rgba(2,2,2,0.88) 81%, rgba(3,3,3,0.88) 97%, rgba(8,8,8,0.88) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 27%, rgba(2,2,2,0.88) 81%, rgba(3,3,3,0.88) 97%, rgba(8,8,8,0.88) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 27%, rgba(2,2,2,0.88) 81%, rgba(3,3,3,0.88) 97%, rgba(8,8,8,0.88) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.29) 27%, rgba(2,2,2,0.88) 81%, rgba(3,3,3,0.88) 97%, rgba(8,8,8,0.88) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#080808', GradientType=0 );
+}
+
+.bottom-content{
+	color: white;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.bottom-content .text-area{
+	height: 50%;
+	width: 100%;
+	display: table;
+}
+
+.left-nav .bottom-content .rating{
+	padding-left: 5px;
+	height: 100%;
+	width: 32%;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
+
+.left-nav .bottom-content .rating .star{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+	background-image: url(http://www.iconsdb.com/icons/preview/white/outline-star-xxl.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.left-nav .bottom-content .heading{
+	display: inline-block;
+	padding-top: 4px;
+	font-size: 1.2em;
+}
+
+.left-nav .bottom-content .subheading{
+	font-size: 0.8em;
+}
+
+.bottom-content .user-logo{
+	padding: 7px;
+}
+
+.bottom-content .user-logo .profile-pic{
+	float: left;
+	width: 50%
+}
+
+.bottom-content .user-logo .logo{
+	float: right;
+}
+
+.bottom-content .user-logo .logo div{
+	display: inline-flex;
+}
+
+.bottom-content .user-logo .user-image{
+	height: 35px;
+}
+
+.bottom-content .user-logo .logo .img-circle{
+	background-color: white;
+}
+
+.bottom-content .user-logo .logo img{
+	height: 20px;
+	padding: 6px;
+}
+
+.details-pane{
+	float: left;
+	width: 25%;
+	padding: 10px;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.details-pane .top-section .image img{
+	width: 100%
+}
+
+.details-pane .top-section .map{
+	background: red;
+	height: 100px;
+}
+
+.details-pane .top-section .rating{
+	height: 130px;
+	background: brown;
+}
+
+.details-pane .comment-area{
+	min-height: 300px;
+	background-color: magenta
+}
+
+.map-area{
+	float: right;
+	height: 100vh;
+	width: 75%;
+	background: olive;
+	position: absolute;
+	z-index: -1;
+	left: 25%
+}

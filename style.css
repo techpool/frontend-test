@@ -307,12 +307,82 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .details-pane .top-section .rating .star{
 	height: 20px;
 	width: 20px;
+	background-image: url(https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/256/outline_star.png);
+}
+
+.details-pane .top-section .recommended-by{
+	background-color: white;
+	height: 60px;
+	text-align: center;
+	-webkit-box-shadow: 0px 25px 50px -25px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 25px 50px -25px rgba(0,0,0,0.50);
+box-shadow: 0px 25px 50px -25px rgba(0,0,0,0.50);
+}
+
+.details-pane .top-section .recommended-by .user-photos{
+	padding-top: 17px;
+}
+
+.details-pane .top-section .recommended-by .user-photos .user-image{
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	margin: 4px;
 }
 
 .details-pane .comment-area{
 	min-height: 300px;
-	background-color: magenta
+	background-color: #f5f5f5;
+
+	-webkit-box-shadow: inset 0px 25px 56px -32px rgba(0,0,0,0.17);
+-moz-box-shadow: inset 0px 25px 56px -32px rgba(0,0,0,0.17);
+box-shadow: inset 0px 25px 56px -32px rgba(0,0,0,0.17);
+
+	padding-top: 45px;
+	text-align: center;
 }
+
+.details-pane .comment-area .comment-card{
+	min-height: 100px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-right: 10px;
+	border-radius: 8px;
+	border-top-left-radius: 34px;
+	background-color: white;
+}
+
+.details-pane .comment-area .comment-card .image{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.details-pane .comment-area .comment-card .image .user-image{
+	height: 60px;
+	margin-top: 5px;
+	margin-left: -20px;
+}
+
+.details-pane .comment-area .comment-card .comment{
+	float: right;
+	width: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.details-pane .comment-area .comment-card .comment .user-name{
+	font-size: 1em;
+}
+
+.details-pane .comment-area .comment-card .comment .comment-time{
+	font-size: 0.8em;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
 
 .map-area{
 	float: right;

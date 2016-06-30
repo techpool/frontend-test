@@ -23,3 +23,11 @@ for (var i = 0; i < list2.length; i++) {
 	var src = list2[i].getAttribute('data-image');
 	list2[i].style.backgroundImage="url('" + src + "')";
 }
+
+function initMap() {
+		var mapDiv = document.getElementById('map-area');
+		var map = new google.maps.Map(mapDiv, {
+		center: {lat: 44.540, lng: -78.546},
+		zoom: 15
+	});
+}

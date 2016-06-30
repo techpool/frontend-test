@@ -1,6 +1,8 @@
 body{
 	margin: 0;
 	overflow-y: hidden;
+	font-family: 'Titillium Web', sans-serif;
+
 }
 
 /*Helper Classes*/
@@ -133,7 +135,7 @@ html[xmlns] .clearfix {
 
 .bottom-content{
 	color: white;
-	height: 100px;
+	height: 110px;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -248,6 +250,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .details-pane .top-section .image img{
 	width: 100%
 }
+
+.details-pane .top-section .share-buttons{
+	text-align: center;
+	position: relative;
+}
+
+.details-pane .top-section .share-buttons .buttons{
+	position: absolute;
+	z-index: 3;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background-color: white;
+	width: 200px;
+	margin-top: -20px;
+	border-radius: 20px;
+}
+
+.details-pane .top-section .share-buttons div.img-circle{
+	display: inline-flex;
+	background-color: white;
+
+}
+
+.details-pane .top-section .share-buttons img{
+	height: 20px;
+	padding: 6px;
+}
+
 
 .details-pane .top-section .map{
 	background-image: url(http://i.imgur.com/cbQHJfI.png);
@@ -384,7 +416,7 @@ box-shadow: inset 0px 25px 56px -32px rgba(0,0,0,0.17);
 }
 
 
-.map-area{
+#map-area{
 	float: right;
 	height: 100vh;
 	width: 75%;
